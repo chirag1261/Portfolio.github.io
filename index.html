@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="Chirag Kumar">
+  <meta property="og:image" content="./assets/project.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+
+  <title>Chirag's Portfolio</title>
+
+  <link rel="canonical" href="">
+  <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="loader.css">
+
+  <!-- CDN's -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+  <script src="./firebaseInit.js"></script>
+</head>
+
+<body>
+  <!--Loader-->
+  <div class="loaderDiv">
+    <div class="loader"></div>
+    <p>Portfolio on the way.....</p>
+  </div>
+  <!--Toaster-->
+  <div class="toaster"></div>
+  <!--Div for background-->
+  <div class="bg-div"></div>
+
+  <!-----------------------
+            HEADER
+    ------------------------->
+
+  <header class="header" id="header">
+    <div class="logo img"><img class=""
+        src="./assets/chirag1.png"
+        alt="logo"></div>
+    <p class="logo initials" tabindex="1" href=""></p>
+    <div class="navbar">
+      <ul class="navbar-list">
+        <li><a class="navbar-link active" name="home" onclick="scrollToSection(this),toggleNav()" tabindex="4">Home</a>
+        </li>
+        <li><a class="navbar-link" name="about" onclick="scrollToSection(this),toggleNav()" tabindex="5">About</a></li>
+        <li><a class="navbar-link" name="skills" onclick="scrollToSection(this),toggleNav()" tabindex="6">Skills</a>
+        </li>
+        <li><a class="navbar-link" name="projects" onclick="scrollToSection(this),toggleNav()" tabindex="7">Projects</a>
+        </li>
+        <li><a class="navbar-link" name="education" onclick="scrollToSection(this),toggleNav()"
+            tabindex="8">Education</a></li>
+        <li><a class="navbar-link" name="experience" onclick="scrollToSection(this),toggleNav()"
+            tabindex="9">Certifications</a></li>
+      </ul><a class="contactBtn button" name="getInTouch" tabindex="10" href="https://www.chiragkrkashyap@gmail.com"
+        target="_blank">Contact</a><ion-icon tabindex="9" name="close-outline" class="mobile-nav-icon"
+        onclick="toggleNav()"></ion-icon>
+    </div><ion-icon tabindex="3" name="menu-outline" class="mobile-nav-icon" onclick="toggleNav()"></ion-icon>
+  </header>
+
+  <!-----------------------
+          HOME SECTION
+    ------------------------->
+
+  <section class="section home-section" id="home" tabindex="42">
+    <div>
+      <h1>Hello, I'm <span class="name">Chirag Kumar</span></h1>
+      <p class="aboutShort">Thank you for visiting my profile ! I am into web development and open to work as a <b>FRONT-END DEVELOPER</b>.</p><button
+        class="about-me-btn button" name="about" onclick="scrollToSection(this)" tabindex="2">About Me<ion-icon
+          name="chevron-forward-outline"></ion-icon></button>
+    </div>
+    <div class="">
+    <div class="imgDiv">
+      <img src="./assets/chirag.png" class="profile-image">
+    </div>
+    </div>
+  </section>
+
+  <!-----------------------
+          ABOUT SECTION
+    ------------------------->
+
+  <section id="about" class="section about-section" tabindex="11">
+    <div class="about-ill"><img src="./assets/about.png" alt="Memoji"></div>
+    <div class="aboutMe" data-aos="fade-left" data-aos-duration="700" data-aos-once="true">
+      <h2 class="name">Chirag Kumar</h2>
+      <div class="professionContainer">
+        <p class="profession">MERN Stack Developer</p>
+        <p class="profession">Java Developer</p>
+        <p class="profession">Competitive Coder</p>
+         <p class="profession">Problem Solving</p>
+      </div><br>
+      <p class="aboutLong">I am a 1st year Master's student pursuing my MCA from Vellore Institute of Technology, Bhopal. 
+        I believe the skills I have attained from the dynamic environment and competitive university life define me and I am looking forward to 
+        implementing and polishing them in any opportunity that I receive. I have been working on Problem solving skills as well as DSA.
+        Yes, I can turn a coffee into a code.<br>  I have comprehensive knowledge of various web development technologies such as HTML, CSS, JavaScript, Tailwind CSS, ReactJS, and Firebase.
+         This skill set enables me to build responsive and interactive websites with excellent functionality features.</p>
+      <br><a class="button" href="https://drive.google.com/file/d/1YdnAtT1Pj98OKZ-YxihVssAmgVZ1Rp5V/view?usp=share_link" target="_blank" tabindex="12">Resume<ion-icon
+          name="document-outline"></ion-icon></a>
+    </div>
+    <ul class="social-menu" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500" data-aos-once="true">
+      <li id="linkedin"><a href="https://www.linkedin.com/in/chirag-kr/" aria-label="linkedin" class="linkedin" tabindex="13"><i
+            class="fab fa-linkedin-in"></i></a></li>
+      <li id="github"><a href="https://github.com/chirag1261" aria-label="github" class="github" tabindex="14"><i
+            class="fab fa-github"></i></a></li>
+      <li id="instagram"><a href="https://www.instagram.com/m.r_.bean/" aria-label="instagram" class="instagram" tabindex="15"><i
+            class="fab fa-instagram"></i></a></li>
+      <li id="twitter"><a href="https://twitter.com/ChiragKrKashya1" aria-label="twitter" class="twitter" tabindex="16"><i
+            class="fab fa-twitter"></i></a></li>
+            
+    </ul>
+  </section>
+
+  <!-----------------------
+        SKILLS SECTION
+    ------------------------->
+
+  <section class="section skill-section" id="skills" tabindex="17">
+    <div style="width:100%;align-items:center;display:flex;flex-direction:column" data-aos="zoom-in-up"
+      data-aos-duration="700" data-aos-once="true">
+      <h1 class="title">My Skills<p>These are some of my major skills on which I have built Projects.</p>
+      </h1>
+      <div class="skill-container">
+        <div class="minor"><img src="https://cdn.auth0.com/blog/react-js/react.png" alt="Skill image 1">
+          <p>React.js</p>
+        </div>
+        <div class="minor"><img src="https://logos-download.com/wp-content/uploads/2016/10/Java_logo.png" alt="Skill image 1">
+          <p>Java</p>
+        </div>
+        <div class="minor"><img src="https://pngimg.com/uploads/php/php_PNG49.png" alt="Skill image 2">
+          <p>PHP</p>
+        </div>
+        <div class="minor"><img src="https://wallpapercave.com/wp/wp4521293.png" alt="Skill image 3">
+          <p>C</p>
+        </div>
+        <div class="minor"><img src="https://www.programandoamedianoche.com/wp-content/uploads/2008/09/asp.net_.logo_.png" alt="Skill image 4">
+          <p>ASP.net</p>
+        </div>
+        <div class="minor"><img src="https://www.alouit-multimedia.com/wp-content/uploads/2012/08/mysql-logo_2800x2800_pixels1.png" alt="Skill image 5">
+          <p>MySQL</p>
+        </div>
+        <div class="minor"><img src="https://i1.wp.com/se-tomo.com/wp/wp-content/uploads/2018/11/Javascript_badge.svg_.png?fit=2000%2C2164&ssl=1" alt="Skill image 6">
+          <p>Javascript</p>
+        </div>
+        <div class="minor"><img src="https://heise.cloudimg.io/width/1024/q50.png-lossy-50.webp-lossy-50.foil1/_www-heise-de_/developer/imgs/06/1/9/1/5/3/6/3/HTML5_logo_and_wordmark-060868424a55c521.png" alt="Skill image 7">
+          <p>HTML5</p>
+        </div>
+        <div class="minor"><img src="https://heise.cloudimg.io/width/1024/q50.png-lossy-50.webp-lossy-50.foil1/_www-heise-de_/developer/imgs/06/1/9/1/5/3/6/3/HTML5_logo_and_wordmark-060868424a55c521.png" alt="Skill image 8">
+          <p>CSS3</p>
+        </div>
+        <div class="minor"><img src="https://www.mindrops.com/images/nodejs-image.png" alt="Skill image 9">
+          <p>Node.js</p>
+        </div>
+        <div class="minor"><img src="https://vectorified.com/images/express-js-icon-20.png" alt="Skill image 10">
+          <p>Express.js</p>
+        </div>
+        <div class="minor"><img src="https://res.cloudinary.com/lwgatsby/f_auto/www/uploads/2020/11/mongodb.png" alt="Skill image 11">
+          <p>MongoDB</p>
+        </div>
+        <div class="minor"><img src="https://www.icmanage.com/wp-content/uploads/2018/03/Git-logo2.png" alt="Skill image 12">
+          <p>Git</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-------------------------
+        PROJECT SECTION
+    ------------------------->
+  <section class="section main project-section" id="projects" tabindex="18">
+    <div style="width:100%;align-items:center;display:flex;flex-direction:column" data-aos="zoom-in-up"
+      data-aos-duration="700" data-aos-once="true">
+      <div class="section-header">
+        <h1 class="title">Projects<p class="sectionDesc">
+            Here are a few past projects I've worked on.<a href="https://chiragkrkashyap@gmail.com" tabindex="22">
+              Email me ></a>
+          </p>
+        </h1><img class="ProjectHeaderImage" src="./assets/project-head.png" alt="Project header image">
+      </div>
+      <div class="project card-container">
+        <div class="project card 1" tabindex="">
+          <div class="imgDiv">
+            <img src="./assets/bookwagon.jpg" alt="Project image">
+          </div>
+          <br>
+          <h6>Book Wagon</h6>
+          <p class="techstack"><span> Description </span> - Created a desktop application using ASP.net where the user can either rent their own books. Users can rent a book for particular
+            period of time.</p>
+          <p class="library"><span>Libraries & Tools </span> - ASP.net, CSS, Javascript, MySQL, C#</p>
+
+          <div class="options">
+            
+            <a class="githubElem" href="https://github.com/chirag1261/Online-Book-Renting-System" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+            <button class="share"><ion-icon name="link-outline">Copied text!</ion-icon></button>
+          </div>
+        </div>
+        <div class="project card 1" tabindex="">
+          <div class="imgDiv">
+            <img src="./assets/roomner.jpg" alt="Project image">
+          </div>
+          <br>
+          <h6>Roomner</h6>
+          <p class="techstack"><span>Description</span> - Developed an android application to help bachelors instantly find ideal flat mates while moving to a
+            new city using Java. </p>
+          <p class="library"><span> Libraries & Tools </span> - Java, Firebase, Android Studio</p>
+
+          <div class="options">
+            
+            <a class="githubElem" href="https://github.com/chirag1261/Roomner" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+            <button class="share"><ion-icon name="link-outline">Copied text!</ion-icon></button>
+          </div>
+        </div>
+        <div class="project card 1" tabindex="">
+          <div class="imgDiv">
+            <img src="./assets/Movietime.png" alt="Project image">
+          </div>
+          <br>
+          <h6>MovieTime</h6>
+          <p class="techstack"><span> Description </span> - Developed a web-based application using PHP where the user can search, sort movies as per their demand from their local theatres nearby.
+            </p>
+          <p class="library"><span> Libraries & Tools </span> - PHP, Javascript, SQLite, CSS, HTML </p>
+
+          <div class="options">
+            
+            <a class="githubElem" href="https://github.com/chirag1261/Movietime---Movie-Ticket-Booking-System" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+            <button class="share"><ion-icon name="link-outline">Copied text!</ion-icon></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-----------------------
+        EDUCATION SECTIONS
+    ------------------------->
+
+  <section class="section education-section" id="education" tabindex="23">
+    <div style="width:100%;align-items:center;display:flex;flex-direction:column" data-aos="zoom-in-up"
+      data-aos-duration="700" data-aos-once="true">
+      <h1 class="title">Education<p>Qualifications</p>
+      </h1>
+      <div class="card-container">
+        <div class="card">
+          <div class="imgDiv">
+            <img src="./assets/vit.png" alt="Institute image">
+          </div><br>
+
+          <h6 class="courseName">Vellore Institute of Technology</h6>
+          <p class="instituteName">Master's of Computer Application (MCA)</p>
+
+          <p class="instituteDesc">Postgraduation</p><br>
+          <p class="status Pursuing">Ongoing : 2022 - 2024</p>
+        </div>
+        <div class="card">
+          <div class="imgDiv">
+            <img src="./assets/kristu.png" alt="Institute image">
+          </div><br>
+
+          <h6 class="courseName">Kristu Jayanti College</h6>
+          <p class="instituteName">Bachelor's of Computer Application (BCA)</p>
+
+          <p class="instituteDesc">Graduation</p><br>
+          <p class="status Completed">Completed : 2019 - 2023</p>
+        </div>
+        <div class="card">
+          <div class="imgDiv">
+            <img src="./assets/xaviers.png" alt="Institute image">
+          </div><br>
+
+          <h6 class="courseName">St. Xavier's School</h6>
+          <p class="instituteName">Higher Secondary School (+2)</p>
+
+          <p class="instituteDesc">Class - 12th (ISC)</p><br>
+          <p class="status Completed">Completed : 2017 - 2019</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-------------------------
+        CERTIFICATIONS SECTION
+    ------------------------->
+    <section class="section experience-section" id="experience" tabindex="24">
+      <div style="width:100%;align-items:center;display:flex;flex-direction:column" data-aos="zoom-in-up"
+      data-aos-duration="700" data-aos-once="true">
+      <div class="section-header">
+        <h1 class="title">Certifications<p class="sectionDesc">
+           
+          </p>
+        </h1>
+      </div>
+      <div class="project card-container">
+        <div class="project card 1" tabindex="">
+          <div class="imgDiv">
+            <img src="./assets/internshala.png" alt="Project image">
+          </div>
+          <br>
+          <h6>Training on Core Java.</h6>
+          <p class="techstack"> The training consisted of Getting Started
+            with Java, Leveraging Basic Concepts, Object Oriented Programming, and Java App Development modules.</p>
+          
+
+          <div class="options">
+            
+           <br> <a class="button" href="https://drive.google.com/file/d/1Z1hj47yAIJo5je4Lnr5mBvbKNufKnjXS/view?usp=share_link" target="_blank" tabindex="12">View<ion-icon
+              name="document-outline"></ion-icon></a>
+          </div>
+        </div>
+        <!-------------------------
+        CERTIFICATe 2
+    ------------------------->
+        
+        <div class="project card 1" tabindex="">
+          <div class="imgDiv">
+            <img src="./assets/aws.png" alt="Project image">
+          </div>
+          <br>
+          <h6>AWS Cloud Practitioner Essentials</h6>
+          <p class="techstack"> Certificate of Completion </p>
+          
+
+          <div class="options">
+            
+            <br> <a class="button" href="https://drive.google.com/file/d/1dMiDVWzrv01xCZ9bDKeTp7iBR0NmkxBz/view?usp=share_link" target="_blank" tabindex="12">View<ion-icon
+              name="document-outline"></ion-icon></a>
+          </div>
+        </div>
+         <!-------------------------
+        CERTIFICATe 3
+    ------------------------->
+    <div class="project card 1" tabindex="">
+      <div class="imgDiv">
+        <img src="./assets/hacker.png" alt="Project image">
+      </div>
+      <br>
+      <h6>Java Basics</h6>
+      <p class="techstack"> Certificate of Completion </p>
+      
+
+      <div class="options">
+        
+        <br> <a class="button" href="https://drive.google.com/file/d/1Ik7iNdSY1RSwMMbW1oGYS7RwHR1DxYFO/view?usp=share_link" target="_blank" tabindex="12">View<ion-icon
+          name="document-outline"></ion-icon></a>
+      </div>
+    </div>
+    <!-------------------------
+        CERTIFICATe 4
+    ------------------------->
+    <div class="project card 1" tabindex="">
+      <div class="imgDiv">
+        <img src="./assets/aws.png" alt="Project image">
+      </div>
+      <br>
+      <h6>AWS Academy Graduate - AWS Academy Cloud Foundation</h6>
+      <p class="techstack"> Badge of Completion </p>
+      
+
+      <div class="options">
+        
+        <br> <a class="button" href="https://www.credly.com/badges/59eb6d3d-afb4-4f6b-a25c-ca1af62df6c4?source=linked_in_profile" target="_blank" tabindex="12">View<ion-icon
+          name="document-outline"></ion-icon></a>
+      </div>
+    </div>
+     <!-------------------------
+        CERTIFICATe 5
+    ------------------------->
+    <div class="project card 1" tabindex="">
+      <div class="imgDiv">
+        <img src="./assets/hacker.png" alt="Project image">
+      </div>
+      <br>
+      <h6>Problem Solving</h6>
+      <p class="techstack"> Certificate of Completion </p>
+      
+
+      <div class="options">
+        
+        <br> <a class="button" href="https://drive.google.com/file/d/1NmgmMLSbHDn8_vcAl_EXAzqGAbXcjcWi/view" target="_blank" tabindex="12">View<ion-icon
+          name="document-outline"></ion-icon></a>
+      </div>
+    </div>
+    <!-------------------------
+        CERTIFICATe 6
+    ------------------------->
+    <div class="project card 1" tabindex="">
+      <div class="imgDiv">
+        <img src="./assets/ibm.png" alt="Project image">
+      </div>
+      <br>
+      <h6>IBM Cybersecurity Fundamentals</h6>
+      <p class="techstack"> Badge of Completion </p>
+      
+
+      <div class="options">
+        
+        <br> <a class="button" href="https://www.credly.com/badges/511ebe9a-5b11-4dec-a248-da9c6972cdd2?source=linked_in_profile" target="_blank" tabindex="12">View<ion-icon
+          name="document-outline"></ion-icon></a>
+      </div>
+    </div>
+    <!-------------------------
+        CERTIFICATe 7
+    ------------------------->
+    <div class="project card 1" tabindex="">
+      <div class="imgDiv">
+        <img src="./assets/ads.png" alt="Project image">
+      </div>
+      <br>
+      <h6>Google Ads Apps Certification</h6>
+      <p class="techstack"> Google recognises your mastery of the fundamentals of creating and optimising Google App
+
+        campaigns.</p>
+      
+
+      <div class="options">
+        
+        <br> <a class="button" href="https://drive.google.com/file/d/1In4eCUnrVJtn3gCc1l5-OmH_rRXNUosg/view?usp=share_link" target="_blank" tabindex="12">View<ion-icon
+          name="document-outline"></ion-icon></a>
+      </div>
+    </div>
+<!-------------------------
+        CERTIFICATe 8
+    ------------------------->
+    <div class="project card 1" tabindex="">
+      <div class="imgDiv">
+        <img src="./assets/twd.jpg" alt="Project image">
+      </div>
+      <br>
+      <h6>Participation in a 12hours Bootcamp</h6>
+      <p class="techstack"> 12 hours of HTML, CSS, React.js, Javascript</p>
+      
+
+      <div class="options">
+        
+        <br> <a class="button" href="hhttps://drive.google.com/file/d/1xXeFqi5Msm1dxVJWcy59cYCB8-mAI7dW/view?usp=share_link" target="_blank" tabindex="12">View<ion-icon
+          name="document-outline"></ion-icon></a>
+      </div>
+    </div>
+      </div>
+    </div>
+    </section>
+
+  <!-----------------------
+           CONTACT FORM
+    ------------------------->
+  <div class="formDiv">
+    <img alt="contact illustration" src="./assets/contact.png">
+    <form id="myform">
+      <div class="user-box"><input type="text" id="name" required><label for="Name">Your Name</label></div>
+      <div class="user-box"><input type="email" id="email" required><label for="Email">Email Address</label></div>
+      <div class="user-box"><textarea id="message" required></textarea><label for="Message">Enter your
+          message</label></div><button type="submit" class="submit-btn button">Submit</button>
+    </form><ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+  </div>
+
+  <!-----------------------
+        FOOTER SECTION
+  ------------------------->
+
+  <footer class="footer" tabindex="35">
+    <div class="getInTouch">
+      <h3>Let's start a project together?</h3>
+      <p>Interested in working together? We should queue up a time to chat.</p><a class="getInTouchBtn button"
+        target="_blank" href="https://www.chiragkrkashyap@gmail.com" tabindex="36">Get in touch</a>
+    </div>
+    <div class="footerParent">
+
+      <div class="profInfo">
+        <div class="imgDiv">
+          <img src="./assets//chirag.png" alt="Profile Image">
+        </div>
+
+        <p>Chirag Kumar<br>Mail me at <a href="https://www.gmail.com" tabindex="37">chiragkrkashyap@gmail.com</a>
+        </p>
+      </div>
+      <div class="reachMeOut">
+        <h3>Reach me out at</h3>
+        <ul class="social-menu">
+          <li id="linkedin"><a href="https://www.linkedin.com/in/chirag-kr/" aria-label="linkedin" class="linkedin" tabindex="38"><i
+            class="fab fa-linkedin-in"></i></a></li>
+          <li id="github"><a href="https://github.com/chirag1261" aria-label="github" class="github" tabindex="39"><i
+                class="fab fa-github"></i></a></li>
+          <li id="instagram"><a href="https://www.instagram.com/m.r_.bean/" aria-label="instagram" class="instagram" tabindex="40"><i
+                class="fab fa-instagram"></i></a></li>
+          <li id="twitter"><a href="https://twitter.com/ChiragKrKashya1" aria-label="twitter" class="twitter" tabindex="41"><i
+                class="fab fa-twitter"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  
+  </footer>
+  <!-- Scripts -->
+  <script src="firebase.js"></script>
+  <script src="./commonScript.js"></script>
+  <script src="script.js"></script>
+
+  <!-- External scripts -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init()</script>
+</body>
+
+</html>
