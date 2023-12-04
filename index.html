@@ -35,14 +35,7 @@
 
 <body>
   <!--Loader-->
-  <div class="loaderDiv">
-    <div class="loader"></div>
-    <p>Portfolio on the way.....</p>
-  </div>
-  <!--Toaster-->
-  <div class="toaster"></div>
-  <!--Div for background-->
-  <div class="bg-div"></div>
+ 
 
   <!-----------------------
             HEADER
@@ -174,6 +167,12 @@
         <div class="minor"><img src="https://www.icmanage.com/wp-content/uploads/2018/03/Git-logo2.png" alt="Skill image 12">
           <p>Git</p>
         </div>
+        <div class="minor"><img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/tailwindcss_logo_icon_170649.png" alt="Skill image 12">
+          <p>Tailwind CSS</p>
+        </div>
+        <div class="minor"><img src="https://banner2.cleanpng.com/20180715/btc/kisspng-computer-icons-python-anaconda-python-logo-download-5b4b1d43a96936.3255621715316493476939.jpg" alt="Skill image 12">
+          <p>Python</p>
+        </div>
       </div>
     </div>
   </section>
@@ -197,18 +196,21 @@
 
 <div class="project card 1" tabindex="">
           <div class="imgDiv">
-            <img src="./assets/logo.png" alt="Project image">
+            <img src="./assets/StudyNotion.png" alt="Project image">
           </div>
           <br>
-          <h6>SHOPINGOOO</h6>
-          <p class="techstack"><span>Description</span> -Developed a project includes all the essential features required for an e-commerce website. 
+          <h6>ED_Tech-StudyNotion</h6>
+          <p class="techstack"><span>Description</span> - MERN-based ED_Tech platform for students, instructors, admins: secure, robust course management, comprehensive analytics. 
       </p>
-          <p class="library"><span> Libraries & Tools </span> - ReactJS, MongoDB, NodeJS, ExpressJS, Cloudinary, StripeAPI, POSTMAN</p>
+          <p class="library"><span> Libraries & Tools </span> - MERN, Cloudinary, RazorPay, NodeMailer, Tailwind CSS</p>
 
           <div class="options">
             
-            <a class="githubElem" href="https://github.com/chirag1261/ShopingooWeb" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
-            <button class="share"><ion-icon name="link-outline">Copied text!</ion-icon></button>
+            <a class="githubElem" href="https://github.com/chirag1261/ED_Tech-Study-Notion" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+            <button class="share" onclick="copyText()"> 
+              <ion-icon name="link-outline"></ion-icon>
+            </button>
+            
           </div>
         </div>
 
@@ -220,16 +222,20 @@
           </div>
           <br>
           <h6>SHOPINGOOO</h6>
-          <p class="techstack"><span>Description</span> -Developed a project includes all the essential features required for an e-commerce website. 
+          <p class="techstack"><span>Description</span> - Developed a project includes all the essential features required for an e-commerce website. 
       </p>
           <p class="library"><span> Libraries & Tools </span> - ReactJS, MongoDB, NodeJS, ExpressJS, Cloudinary, StripeAPI, POSTMAN</p>
 
           <div class="options">
             
             <a class="githubElem" href="https://github.com/chirag1261/ShopingooWeb" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
-            <button class="share"><ion-icon name="link-outline">Copied text!</ion-icon></button>
+            <button class="share" onclick="copyText1()"> 
+              <ion-icon name="link-outline"></ion-icon>
+            </button>
           </div>
         </div>
+
+       
 
 
         
@@ -251,7 +257,25 @@
         </div>
 
 
-        
+        <div class="project card 1" tabindex="">
+          <div class="imgDiv">
+            <img src="./assets/cloud.jpg" alt="Project image">
+          </div>
+          <br>
+          <h6>Weather App</h6>
+          <p class="techstack"><span>Description</span> - A react CurrentWeatherApp where the user can choose the city and see the weather through the API for 5 days. 
+          </p>
+          <br>
+              <p class="library"><span> Libraries & Tools </span> - ReactJS, HTML, CSS, JavaScript, API </p>
+
+          <div class="options">
+            
+            <a class="githubElem" href="https://github.com/chirag1261/CurrentWeatherApp" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+            <button class="share" onclick="copyText2()"> 
+              <ion-icon name="link-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
 
 
         <div class="project card 1" tabindex="">
@@ -594,6 +618,25 @@
   <script src="./commonScript.js"></script>
   <script src="script.js"></script>
 
+  <script>
+    function copyText() {
+      // Replace 'YOUR_REDIRECT_LINK' with the URL you want to redirect to
+      window.location.href = 'https://ed-tech-study-notion-frontend.vercel.app/';
+    }
+  </script>
+  <script>
+    function copyText1() {
+      // Replace 'YOUR_REDIRECT_LINK' with the URL you want to redirect to
+      window.location.href = 'https://shopingecommm.onrender.com/';
+    }
+  </script>
+
+  <script>
+    function copyText2() {
+      // Replace 'YOUR_REDIRECT_LINK' with the URL you want to redirect to
+      window.location.href = 'https://reactcurrentweatherwebsite.netlify.app/';
+    }
+  </script>
   <!-- External scripts -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

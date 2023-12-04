@@ -106,11 +106,11 @@ section {
   overflow: hidden;
   height: -moz-max-content;
   height: max-content;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
 }
 .card-container .card .imgDiv img {
   max-width: 100%;
-  max-height: 100%;
+  max-height: 90%;
   border-radius: 1rem;
   margin: auto;
 }
@@ -215,7 +215,13 @@ a {
   bottom: 0;
   left: 0;
   transform: translateX(-100%);
-  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.2) 20%, rgba(255, 255, 255, 0.5) 60%, rgba(255, 255, 255, 0));
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0,
+    rgba(255, 255, 255, 0.2) 20%,
+    rgba(255, 255, 255, 0.5) 60%,
+    rgba(255, 255, 255, 0)
+  );
   animation: shimmer 2s infinite;
   content: "";
 }
@@ -273,7 +279,14 @@ a {
 }
 .social-menu .instagram:hover,
 .social-menu .instagram:focus {
-  background: radial-gradient(circle at 30% 110%, #ffdb8b 0%, #ee653d 25%, #d42e81 50%, #a237b6 75%, #3e5fbc 100%);
+  background: radial-gradient(
+    circle at 30% 110%,
+    #ffdb8b 0%,
+    #ee653d 25%,
+    #d42e81 50%,
+    #a237b6 75%,
+    #3e5fbc 100%
+  );
 }
 .social-menu .twitter:hover,
 .social-menu .twitter:focus {
@@ -466,7 +479,7 @@ a {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 /*  -------------------------------
@@ -478,7 +491,14 @@ a {
   flex-direction: row;
   justify-content: space-evenly;
   background-color: transparent;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.95), rgb(255, 255, 255), rgb(255, 255, 255), #f9f9f9, #f7f7f7);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.95),
+    rgb(255, 255, 255),
+    rgb(255, 255, 255),
+    #f9f9f9,
+    #f7f7f7
+  );
 }
 .about-section .about-ill {
   width: 30%;
@@ -537,7 +557,7 @@ a {
   -webkit-transition: all 0.5s;
 }
 .skill-section .skill-container div img {
-  width: 4rem;
+  width: 7rem;
 }
 .skill-section .skill-container div p {
   font-weight: 500;
@@ -574,7 +594,7 @@ a {
   margin-bottom: 2rem;
 }
 .project-section .section-header img {
-  width: 12rem;
+  width: 8rem;
   right: -16rem;
   transform: rotate(10deg);
 }
@@ -593,7 +613,14 @@ a {
 }
 .project-section .card-container .card {
   height: 35rem;
-  background-image: linear-gradient(to top, #000, #121112, #1c1c1f, #25282b, #2d3436);
+  background-image: linear-gradient(
+    to top,
+    #000,
+    #121112,
+    #1c1c1f,
+    #25282b,
+    #2d3436
+  );
   background-repeat: no-repeat;
   background-size: 100% 50%;
 }
@@ -836,7 +863,7 @@ a {
   background: transparent;
   -webkit-user-select: text;
   -moz-user-select: text;
-       user-select: text;
+  user-select: text;
   border-radius: 0;
 }
 .formDiv form div input:-webkit-autofill,
@@ -936,7 +963,7 @@ a {
   min-width: 100%;
   max-height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .footer .profInfo p {
   font-size: 1.2rem;
@@ -1417,4 +1444,4 @@ a {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #daa520;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
