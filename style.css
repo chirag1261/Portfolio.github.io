@@ -41,7 +41,7 @@ body {
   z-index: -1;
   background-image: url(./assets/bg-proj.png);
   background-blend-mode: color var(--fade-black);
-  animation: MOVE-BG 15s infinite reverse linear;
+  animation: MOVE-BG 8s infinite reverse linear;
 }
 
 @keyframes MOVE-BG {
